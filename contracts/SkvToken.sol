@@ -27,7 +27,7 @@ contract SkvToken{
 		balanceOf[msg.sender] = _initialSupply;//allocate the initial supply
 	}
 
-	function transfer(address _to,uint256 _value) public payable returns(bool success){
+	function transfer(address payable _to,uint256 _value) public payable returns(bool success){
 
 		require(balanceOf[msg.sender]>= _value);
 
