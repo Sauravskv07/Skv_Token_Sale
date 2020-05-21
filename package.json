@@ -1,0 +1,19 @@
+{
+	"name": "SKV_Token_Sale",
+	"version": "1.0.0",
+	"description": "SKV Token Sale ICO",
+	"main": "truffle.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"start": "nodemon index.js"
+	},
+	"author": "Virmani",
+	"licence": "ISC",
+	"dependencies": {
+		"@truffle/contract": "^4.2.5",
+		"express": "^4.17.1",
+		"web3": "^1.2.8"
+	}
+}
