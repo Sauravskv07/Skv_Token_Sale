@@ -87,7 +87,7 @@ App={
 
 		web3.eth.getCoinbase((error,account)=>{
 			if(!error){
-				console.log(account);
+				console.log('account=', account);
 				App.account = account;
 				$('#accountAddress').html('Your Account Address : '+ account);
 			}
