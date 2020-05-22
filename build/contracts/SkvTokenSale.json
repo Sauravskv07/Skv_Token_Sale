@@ -1152,7 +1152,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 390,
+                                  "referencedDeclaration": 392,
                                   "src": "713:4:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_SkvTokenSale_$359",
@@ -1776,7 +1776,7 @@
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 390,
+                                    "referencedDeclaration": 392,
                                     "src": "1025:4:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_contract$_SkvTokenSale_$359",
@@ -3086,7 +3086,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 390,
+                                  "referencedDeclaration": 392,
                                   "src": "713:4:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_SkvTokenSale_$359",
@@ -3710,7 +3710,7 @@
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 390,
+                                    "referencedDeclaration": 392,
                                     "src": "1025:4:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_contract$_SkvTokenSale_$359",
@@ -3987,6 +3987,32 @@
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {
+        "0x5e5e995ce3133561afceaa51a9a154d5db228cd7525d34df5185582c18d3df09": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_buyer",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Sell",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x93Ed7D10295BaD08c31aa9Ee9166D921BD08741c",
+      "transactionHash": "0x37ebfc1b122ac6677f1e8cb71b8826f65fc8aec5857d020367b885afeab45f94"
+    },
     "5777": {
       "events": {
         "0x5e5e995ce3133561afceaa51a9a154d5db228cd7525d34df5185582c18d3df09": {
@@ -4015,7 +4041,7 @@
     }
   },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-05-21T15:24:51.538Z",
+  "updatedAt": "2020-05-22T20:32:06.328Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

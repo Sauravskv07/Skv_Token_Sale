@@ -1,5 +1,4 @@
 App={
-
 	web3Provider: null,
 	contracts:{},
 	account:'0x0',
@@ -23,6 +22,9 @@ App={
 			App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
 		}	
 		web3 = new Web3(App.web3Provider);
+		//App.web3Provider = new Web3.providers.WebsocketProvider("wss://rinkeby.infura.io/ws/v3/6a619c8c4fe347dcb763872165c77e02")
+		
+		//web3 = new Web3(App.web3Provider);
 		return App.initContracts();
 	},
 
@@ -32,7 +34,6 @@ App={
 			App.contracts.SkvTokenSale.setProvider(App.web3Provider);
 			App.contracts.SkvTokenSale.deployed().then(function(skvTokenSale){
 				console.log("Skv Token Sale Address = ",skvTokenSale.address);
-			console.log('web3 contract = ',App.web3contract);
 			})
 		}).done(()=>{
 			$.getJSON('SkvToken.json',(skvToken)=>{
